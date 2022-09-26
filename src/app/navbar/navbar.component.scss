@@ -1,0 +1,41 @@
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    .container{
+        width: 90%;
+        margin: 0 auto;
+
+        .left{
+            float: left;
+
+            .title{
+                cursor: pointer;
+                a{
+                    color:white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .right{
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                height: 30px;
+                width: 90px;
+                text-align: center;
+                padding:10px;
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color:white;
+                background-color: rgb(33, 33, 33);
+            }
+        }
+    }
+}

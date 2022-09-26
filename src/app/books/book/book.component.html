@@ -1,0 +1,5 @@
+<div>
+    <p class="book-name">{{B.name | titlecase}}</p>
+    <p class="book-price">{{B.price | currency:'BDT'}}</p>
+    <button  class="add-to-cart" (click)="addToCart()" >Add to card</button>
+</div>

@@ -1,0 +1,35 @@
+<div class="form-holder">
+    <h1>Add book</h1>
+    <form (ngSubmit)="submit()">
+        <p>Book name</p>
+        <input 
+        required 
+        minlength="3" 
+        pattern="[A-Za-z ]*" 
+        type="text" 
+        [(ngModel)]="form.name" 
+        name="name" 
+        #name="ngModel">
+        <div *ngIf="name.invalid && (name.dirty || name.touched)">
+            <div *ngIf="name.errors?.['required']">Book name is required</div>
+            <div *ngIf="name.errors?.['minlength']">Minimum length will be three</div>
+            <div *ngIf="name.errors?.['pattern']">Pattern not match (All letters will accepted)</div>
+        </div>
+        <p>Price</p>
+        <input 
+        required 
+        pattern="[1-9]{1}[0-9]*?.?[0-9]*?" 
+        type="text" 
+        [(ngModel)]="form.price" 
+        name="price" 
+        #price="ngModel" >
+        <div 
+        *ngIf="price.invalid && (price.dirty || price.touched)">
+            <div 
+            *ngIf="price.errors?.['required']">Book price is required</div>
+            <div 
+            *ngIf="price.errors?.['pattern']">Only number is accepted and first number will not be zerro</div>
+        </div>   
+        <br><br><br><input type="submit">
+    </form>
+</div>

@@ -1,0 +1,17 @@
+tr{
+    width: 500px;
+        background-color:rgb(202, 202, 202);
+    td{
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    button{
+        padding: 10px;
+        border-style: none;
+    }
+}
+tr:hover{
+    background-color: rgb(127, 193, 211);
+}

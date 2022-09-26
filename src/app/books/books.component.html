@@ -1,0 +1,9 @@
+<div>
+    <h1>Book list</h1>
+    <button (click)="handaleClick($event)">Hide Book</button><br><br>
+    <div *ngIf="isShowing" class="book-container">
+        <ng-container *ngFor=" let Book of Books">
+            <app-book [B]="Book"></app-book>
+        </ng-container>
+    </div>
+</div>

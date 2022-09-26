@@ -1,0 +1,33 @@
+div{
+    cursor: pointer;
+    text-align: center;
+
+    .book-name{
+        background-color: rgb(231, 231, 231);
+        padding: 10px;
+        border-radius: 10px;
+        height: 200px;
+        width: 200px;
+        margin: 0;
+        text-align: center;
+    }
+    .book-price{
+        margin-top: 5px;
+        margin-bottom: 0px ;
+        font-size: small;
+        text-align: center;
+    }
+
+    .add-to-cart{
+        margin:5px 0 0 0;
+        padding: 10px;
+        color: white;
+        background-color: rgb(202, 58, 39);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .add-to-card:hover{
+        background-color: rgb(155, 27, 10);
+    }
+}
